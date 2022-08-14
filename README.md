@@ -6,8 +6,6 @@ Miłego czytania.
 
 Wszelkie błędy napotkane podczas czytania należy zgłaszać na DM: **igoyek#0001**.
 
-## 📜 Spis treści
-
 ## 🔧 Wybór dostawcy usług
 Często przed zakupem domeny padają pytania - "Jakiego dostawcę wybrać?", OVH? AZ? NAZWA?
 Osobiście uważam, że różnica jest niewielka. Co innego gdybyśmy mieli zakupić maszynę dedykowaną.
@@ -25,7 +23,7 @@ Jeśli rekord A w strefie DNS naszej domeny istnieje, usuwamy go i tworzymy nowy
 
 **TTL:** Zostawiamy domyślne.
 
-**Wartość:** Tutaj wpisujemy docelowy adres naszego serwera. Może być to IP numeryczne, np. `127.0.0.1`, bądź host (w zależności od hostingu), np. `n100.hosting.pl`.
+**Wartość:** Tutaj wpisujemy docelowy adres naszego serwera. Może być to IP numeryczne, np. `127.0.0.1`, bądź host (w zależności od hostingu), np. `n1.hosting.pl`.
 **UWAGA!** W tym polu nie podajemy portu docelowego serwera!
 
 ### Ustawienie rekordu SRV
@@ -42,3 +40,4 @@ W miejsce *DOMENA* wprowadzamy wartość, którą ustaliliśmy w rekordzie A jak
 
 **Adres docelowy:** Tutaj wpisujemy wartość podaną w rekordzie A jako *subdomenę*, np. `mc.domena.pl` lub `serwer.domena.pl`.
 
+**Docelowa wartość rekordu:** "{priorytet} {waga} {port} {adres docelowy}", np. `0 0 25565 mc.domena.pl`
